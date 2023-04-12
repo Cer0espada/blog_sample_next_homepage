@@ -1,0 +1,30 @@
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    &_container{
+        display: flex;
+        flex-direction: column;
+
+        &:hover{
+            cursor:pointer
+        }
+        &__heading_container{
+            display: flex;
+            flex-direction: row;
+            
+            &__heading{
+                font-size: 1.2rem;
+                margin-right: .5rem;
+            }
+            &__icon{
+                color: var(--prosparity-pink);
+                margin-right: .5rem;
+                padding-top: .4rem;
+                &.down{
+                    transform: rotateX(180deg);
+                    transition: ease .4s;
+                }
+            }
+        }
+    }
+}

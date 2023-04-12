@@ -1,0 +1,45 @@
+.searchBar{
+    display: flex;
+    width: 90%;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: flex-end;
+    &_container{
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+    
+
+    &_contentContainer{
+        display: flex;
+        flex-direction: row;
+        align-content:flex-end;
+        align-self: flex-end;
+
+        &>*{
+            margin: 0 .5rem;
+
+            &:last-child{
+                margin-right:0rem;
+            }
+        }
+      
+        i{
+            color: var(--prosparity-pink);
+            font-size: 1rem;
+            
+            &:hover{
+                cursor: pointer ;
+            }
+ 
+        }
+
+        &__input{
+            color: var(--prosparity-pink);
+           border: none;
+
+        }
+    }
+    }
+
+}

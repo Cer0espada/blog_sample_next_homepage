@@ -1,0 +1,41 @@
+.BlogPostGrid{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid  var(--light-red);
+    width: 100%;
+    &_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: var(--light-red);
+        
+        &__title_container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            &--title{
+
+            }
+
+            &__dropdown{
+                align-self: flex-end;
+                justify-self: flex-end;
+
+                &.filter{
+                    align-self: flex-end;
+                }
+            }
+
+            
+        }
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 1rem;
+        }
+    }
+
+    
+}

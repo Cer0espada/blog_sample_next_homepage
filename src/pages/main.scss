@@ -32,10 +32,17 @@
   --prosparity-pink:#db3db5;
   --black:rgb(28, 28, 30);
   --font-primary:'Poppins', sans-serif;
+    body {
+        font-family:var( --font-primary);
+        font-weight: 300px;
+        color: var(--black);
+    }
 
-}
-body {
-    font-family: --font-primary;
-    font-weight: 300px;
-    color: --black;
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
 }
